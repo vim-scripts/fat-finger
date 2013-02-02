@@ -1,0 +1,46 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4423
+
+vim-fat-finger
+A simple vim plugin that automatically corrects common misspellings and typos as you type.
+
+Misspellings
+This plugin supports over 4,000 common misspellings, as defined in plugin/fat-finger.vim.
+
+The settings in the plugin file are defined using Vim's iabbrev keyword, which is part of Vim's built-in abbreviations feature. The definitions follow a format of iabbrev, followed by the commonly misspelled word, and then finally the desired corrected version of misspelling.
+
+For example:
+
+iabbrev acheive achieve
+iabbrev contraversy controversy
+iabbrev demenor demeanor
+iabbrev embarass embarrass
+iabbrev lisence license
+iabbrev morgage mortgage
+iabbrev nightfa;; nightfall
+iabbrev offred offered
+iabbrev precice precise
+iabbrev teh the                                                                                                  
+
+
+Installation
+
+1. Unravel the gzipped tarball:
+tar xvfz vim-fat-finger.tar.gz
+
+OR, if you found the plugin on Github:
+git clone git://github.com/chip/vim-fat-finger.git
+
+2. Copy the file to your vim plugins directory:
+cp vim-fat-finger/plugin/fat-finger.vim ~/.vim/plugin/
+
+
+Configuration
+Simply edit ~/.vim/plugin/fat-finger.vim to suit your needs. If you don't like a specific definition, feel free to edit it or remove it altogether.
+
+
+License
+https://github.com/chip/vim-fat-finger/blob/master/LICENSE.md
+
+
+Trolling
+Feel free to follow chip at http://chipcastle.com, or on https://github.com/chip or https://twitter.com/chipcastle
